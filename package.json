@@ -1,0 +1,19 @@
+{
+  "name": "synpress-mcve",
+  "version": "0.1.0",
+  "description": "This is a boilerplate to discuss and fix",
+  "keywords": ["Cypress", "Cucumber", "Metamask", "Synpress"],
+  "author": "Yakov Litvin",
+  "license": "ISC",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cucumber/cucumber": "^9.1.2",
+    "@synthetixio/synpress": "^3.7.0",
+    "cypress": "^12.13.0",
+    "typescript": "^5.1.3"
+  }
+}
