@@ -6,14 +6,16 @@
   "author": "Yakov Litvin",
   "license": "ISC",
   "scripts": {
-    "test": "cypress open"
+    "test:e2e": "env-cmd cypress run --browser chrome --headed",
+    "test": "env-cmd cypress open"
   },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^17.2.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@cucumber/cucumber": "^9.1.2",
-    "@synthetixio/synpress": "^3.7.0",
+    "@synthetixio/synpress": "^3.7.1",
     "cypress": "^12.13.0",
+    "env-cmd": "^10.1.0",
     "has-bigints": "^1.0.2",
     "typescript": "^5.1.3"
   },
