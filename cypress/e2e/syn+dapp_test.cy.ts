@@ -16,7 +16,7 @@ When('we accept notification', function () {
 });
 
 Then(
-  'below the asset image there should be a toggle wishlist button',
+  'the button should say Connected',
   function () {
     cy.get('#connectButton').should('have.text', 'Connected');
   }
