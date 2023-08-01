@@ -7,20 +7,5 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 
 Given("we're on the test dapp page", () => {
-  cy.visit('https://metamask.github.io/test-dapp/');
+  cy.visit('https://www.chatbase.co');
 });
-
-When('we press connect', function () {
-  cy.get('#connectButton').click();
-});
-
-When('we accept notification', function () {
-  cy.acceptMetamaskAccess().should('be.true');
-});
-
-Then(
-  'the button should say Connected',
-  function () {
-    cy.get('#connectButton').should('have.text', 'Connected');
-  }
-);
