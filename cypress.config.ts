@@ -7,7 +7,7 @@ import { defineConfig } from 'cypress';
 export default defineConfig({
   video: false,
   e2e: {
-    specPattern: ['cypress/e2e/*.feature'],
+    specPattern: ['cypress/e2e/*.cy.ts'],
     supportFile: 'cypress/support/e2e.ts',
     testIsolation: true,
     async setupNodeEvents(
