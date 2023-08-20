@@ -8,3 +8,6 @@ Feature: Test of Synpress and Metamask with a DApp from a tutorial
             When we press connect
             When we accept notification
             Then the button should say Connected
+            When we press Sign on the Personal Sign card
+            And we confirm signing
+            Then something should happen

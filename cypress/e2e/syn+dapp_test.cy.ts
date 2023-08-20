@@ -24,3 +24,17 @@ Then(
     cy.get('#connectButton').should('have.text', 'Connected');
   }
 );
+
+When('we press Sign on the Personal Sign card', () => {
+  // personalSign, signTypedData, signTypedDataV3, signTypedDataV4
+  cy.get('#signTypedDataV3').click();
+});
+
+When('we confirm signing', () => {
+  // cy.pause();
+  cy.confirmMetamaskSignatureRequest();
+});
+
+Then('something should happen', () => {
+  //cy.get('#personalSign').should('');
+});
